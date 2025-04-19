@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class CountLettersTest {
-
+    //test actividades
     @Test
     public void multipleMatchingWords() {
         int words = new CountLetters().count("cats|dogs");
@@ -16,7 +16,7 @@ public class CountLettersTest {
         int words = new CountLetters().count("cats|dog");
         Assertions.assertEquals(1, words);
     }
-
+    //test ejercicios
     @Test
     public void TestWithX() {
         int words = new CountLetters().count("catx|dox");
