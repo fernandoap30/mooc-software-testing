@@ -17,4 +17,16 @@ public class CountLettersTest {
         Assertions.assertEquals(1, words);
     }
 
+    @Test
+    public void TestWithX() {
+        int words = new CountLetters().count("catx|dox");
+        Assertions.assertEquals(1, words);
+    }
+
+    @Test
+    public void TestWithR() {
+        int words = new CountLetters().count("catxr|doxr");
+        Assertions.assertEquals(1, words);
+    }
+
 }
