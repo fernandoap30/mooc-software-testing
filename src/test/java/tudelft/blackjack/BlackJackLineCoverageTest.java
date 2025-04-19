@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class BlackJackLineCoverageTest {
-
+    //test actividades
     @Test
     public void bothPlayersGoTooHigh() {
         int result = new BlackJack().play(27, 22);
@@ -16,6 +16,7 @@ public class BlackJackLineCoverageTest {
         int result = new BlackJack().play(12, 3);
         Assertions.assertEquals(12, result);
     }
+    //test ejercicios
     @Test
     public void rightPlayerWins() {
         int result = new BlackJack().play(12, 13);
@@ -27,7 +28,7 @@ public class BlackJackLineCoverageTest {
         Assertions.assertEquals(11, result);
     }
     @Test
-    public void limits() {
+    public void limits21() {
         int result = new BlackJack().play(21, 19);
         Assertions.assertEquals(21, result);
     }
