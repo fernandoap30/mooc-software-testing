@@ -7,13 +7,28 @@ public class BlackJackLineCoverageTest {
 
     @Test
     public void bothPlayersGoTooHigh() {
-        int result = new BlackJack().play(30, 30);
+        int result = new BlackJack().play(27, 22);
         Assertions.assertEquals(0, result);
     }
 
     @Test
     public void leftPlayerWins() {
-        int result = new BlackJack().play(10, 9);
-        Assertions.assertEquals(10, result);
+        int result = new BlackJack().play(12, 3);
+        Assertions.assertEquals(12, result);
+    }
+    @Test
+    public void rightPlayerWins() {
+        int result = new BlackJack().play(12, 13);
+        Assertions.assertEquals(13, result);
+    }
+    @Test
+    public void bothPlayerDraw() {
+        int result = new BlackJack().play(11, 11);
+        Assertions.assertEquals(11, result);
+    }
+    @Test
+    public void limits() {
+        int result = new BlackJack().play(21, 19);
+        Assertions.assertEquals(21, result);
     }
 }
